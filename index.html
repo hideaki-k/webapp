@@ -13,11 +13,17 @@
 </head>
 <body>
     <header>
-        <h1>TODAY</h1>
+        <h1>TOsDAY</h1>
     </header>
     <div class="container">
-        <p class="date">20xx/01/23</p>
-        
+        <script>
+            var today = new Date();
+            var todayHTML = today.getFullYear() + '/' + (today.getMonth()+1+'/'+today.getDate());
+            document.write('<p>今日は'+todayHTML+'日です');
+                
+            
+
+        </script>
     </div>
 </body>
 </html>
